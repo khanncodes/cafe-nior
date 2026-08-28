@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Noir — Coffee & Kitchen</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Georgia', serif;
+        }
+
+        body {
+
+            background-color: #241f1c;
+        }
+
+        header {
+            background-color: black;
+        }
+
+        nav {
+            padding: 20px 70px;
+            color: wheat;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #header ul {
+            display: flex;
+            list-style: none;
+
+
+        }
+
+        .options li {
+            margin-top: 10px;
+            padding: 0px 10px;
+            border-bottom: solid gray 1px transparent;
+        }
+
+
+        #header a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #header a:hover {
+            color: #a3402c;
+        }
+
+        .name h2 {
+            font-weight: normal;
+        }
+
+        #intro {
+
+            background: radial-gradient(circle at top, #632013, transparent 40%, #241f1c);
+            display: flex;
+            justify-content: center;
+        }
+
+        .intro {
+            margin: 100px;
+            max-width: 700px;
+            text-align: center;
+        }
+
+        .intro span {
+            display: inline-flex;
+            margin-bottom: 20px;
+            color: #a3402c;
+            font-size: 28px;
+        }
+
+        .intro h1 {
+            font-size: 56px;
+            color: rgb(223, 209, 209);
+        }
+
+        .intro p {
+            margin: 25px 30px;
+            color: rgb(223, 209, 209);
+            font-size: 28px;
+
+        }
+
+        .intro a {
+            padding: 10px 30px;
+            display: inline-flex;
+            margin-top: 15px;
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 28px;
+            background-color: #a3402c;
+        }
+
+        .intro a:hover {
+            background: black;
+            color: #a3402c;
+
+        }
+
+        .title {
+            margin-bottom: 40px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        .title h2 {
+            color: #a3402c;
+            margin-bottom: 10px;
+        }
+
+        .title h1 {
+            font-size: 48px;
+            color: aliceblue;
+        }
+
+        #menu {
+            padding-top: 40px;
+        }
+
+        .menu {
+            margin: 20px 70px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px 60px;
+
+        }
+
+        .menu-item {
+            margin: 20px 0px;
+            border-bottom: 1px dashed dimgray;
+        }
+
+        .menu-item div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .menu-item h3 {
+            color: aliceblue;
+        }
+
+        .price {
+            color: #a3402c;
+        }
+
+        .menu-item small {
+            display: inline-flex;
+            margin-bottom: 10px;
+            color: antiquewhite;
+        }
+
+        #story {
+            background: #5c6b3f;
+            margin-top: 40px;
+            padding: 40px 70px 0px 70px;
+        }
+
+        .story {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+
+        .story-text {
+            color: aliceblue;
+            max-width: 500px;
+            margin-bottom: 40px;
+        }
+
+        .story-text h2 {
+            font-size: 40px;
+            margin: 20px 0px;
+        }
+
+        .story-text span {
+            padding: 2px;
+            color: rgb(197, 184, 166);
+        }
+
+        .story-text p {
+            font-size: 20px;
+        }
+
+        .story-stats {
+            margin-top: 80px;
+            display: flex;
+            text-align: center;
+            color: aliceblue;
+
+        }
+
+        .story-stats div {
+            padding: 20px;
+        }
+
+        .story-stats strong {
+            display: block;
+            font-size: 40px;
+        }
+
+        .story-stats span {
+            font-size: 24px;
+            color: rgb(197, 184, 166);
+        }
+
+        #footer {
+            padding: 30px;
+            text-align: center;
+        }
+
+        #footer h3 {
+            font-size: 14px;
+            font-weight: normal;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="header">
+            <span class="name">
+                <h2> <a href="#">CAFE NOIR </a></h3>
+
+            </span>
+            <ul class="options">
+                <li>
+                    <a href="#menu">Menu</a>
+
+                </li>
+                <li>
+                    <a href="#story">Our Story</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <div class="intro">
+
+                <span>
+                    italian hotel in the heart of lahore
+                </span>
+                <h1>
+                    Slow mornings, strong coffee, honest food.
+                </h1>
+                <p>
+                    A neighborhood café built around good beans, seasonal plates, and a room worth lingering in.
+                </p>
+                <a href="#menu">view menu</a>
+            </div>
+
+        </section>
+        <section id="menu">
+
+            <div class="title">
+                <h2>what we serve</h2>
+                <h1>the menu</h1>
+            </div>
+        </section>
+        <section class="menu">
+            <div class="menu-item">
+                <div>
+                    <h3>Flat White</h3>
+                    <span class="price">Rs 450</span>
+                </div>
+                <small>Double shot, steamed milk</small>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Pour Over</h3>
+                    <span class="price">Rs 520</span>
+                </div>
+                <small>Single origin, rotating</small>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Shakshuka</h3>
+                    <span class="price">Rs 950</span>
+                </div>
+                <small>Eggs, tomato, toasted sourdough</small>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Avocado Toast</h3>
+                    <span class="price">Rs 850</span>
+                </div>
+                <small>Chili flake, lime, feta</small>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Cardamom Bun</h3>
+                    <span class="price">Rs 380</span>
+                </div>
+                <small>Baked fresh every morning</small>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Chai Latte</h3>
+                    <span class="price">Rs 420</span>
+                </div>
+                <small>House spice blend</small>
+            </div>
+
+            </div>
+        </section>
+        <section class="story" id="story">
+            <div class="story-text">
+                <span>SINCE 2019</span>
+                <h2>Started with one espresso machine and a spare room.</h2>
+                <p>Café Noir began as a weekend pop-up. Today it's a full kitchen and roastery, still run by the same
+                    two people who started it — still obsessed with the same things.</p>
+            </div>
+            <div class="story-stats">
+                <div>
+                    <strong>7</strong>
+                    <span>Years Open</span>
+                </div>
+                <div>
+                    <strong>12</strong>
+                    <span>Origins Sourced</span>
+                </div>
+                <div>
+                    <strong>4.8</strong>
+                    <span>Avg Rating</span>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div id="footer">
+                <h3>Café Noir · Open daily 8am – 10pm · Gulberg, Lahore</h3>
+            </div>
+        </footer>
+    </main>
+
+</body>
+
+</html>
